@@ -1,97 +1,127 @@
 <!DOCTYPE html>
+<!--
+    Name: Manjinder
+    File: Page.html
+    Date: 21 February 2025
+    A responsive HTML layout for a personal blog or portfolio website. 
+    It includes a navigation menu, a main article section with an image and text, 
+    and a sidebar featuring a photography gallery. The page is styled using CSS to 
+    create a modern and structured layout with a flexible grid system.
+-->
 <html lang="en-US">
 <head>
-    <!--
-    Name: Your Name
-    File: mozilla_splash.html
-    Date: XX September 202X
-    A Mozilla splash page featuring multimedia and images.
-    -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mozilla Splash Page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
-    <style>
-        html {
-            font-family: 'Open Sans', sans-serif;
-            background: url('BackGround.jpg');
-        }
-        body {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            position: relative;
-        }
-        header {
-            height: 150px;
-            position: relative;
-        }
-        header img {
-            width: 100px;
-            position: absolute;
-            right: 32.5px;
-            top: 32.5px;
-        }
-        h1 {
-            font-size: 50px;
-            line-height: 140px;
-            margin: 0 0 0 32.5px;
-        }
-        main {
-            background: #ccc;
-        }
-        article {
-            padding: 20px;
-        }
-        iframe {
-            float: left;
-            margin: 0 20px 20px 0;
-            max-width: 100%;
-        }
-        .further-info {
-            clear: left;
-            padding: 40px 0;
-            background: #c13832;
-            box-shadow: inset 0 3px 2px rgba(0,0,0,0.5), inset 0 -3px 2px rgba(0,0,0,0.5);
-            text-align: center;
-        }
-        .further-info a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .further-info img {
-            height: 100px;
-        }
-        .red-panda img {
-            width: 100%;
-            display: block;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout Task</title>
+  <style>
+      body {
+          background-color: #fff;
+          color: #333;
+          margin: 0;
+          font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+      }
+      img {
+          max-width: 100%;
+          display: block;
+      }
+      .logo {
+          font-size: 200%;
+          padding: 50px 20px;
+          margin: 0 auto;
+          max-width: 980px;
+          text-align: left;
+      }
+      .grid {
+          margin: 0 auto;
+          padding: 0 20px;
+          max-width: 980px;
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+      }
+      article {
+          flex: 2.5;
+          /* margin-left: -300px;
+          margin-right: 300px; */
+          text-align: left;
+      }
+      aside {
+          flex: 1;
+      }
+      nav {
+          background-color: #000;
+          padding: 1em 0;
+      }
+      nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+      }
+      nav li {
+          flex: 1;
+          text-align: center;
+      }
+      nav a {
+          color: #fff;
+          text-decoration: none;
+          padding: 0em 1em;
+          display: block;
+      }
+      .photos {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1px;
+      }
+      .feature {
+          width: 30%;
+          height: auto;
+          float: left;
+          margin: 0 15px 10px 0;
+      }
+  </style>
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
 </head>
 <body>
-    <header>
-        <h1>Mozilla</h1>
-        <img src="Mozilla.jpg" alt="Mozilla Logo">
-    </header>
-
-    <main>
-        <article>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2vJdeqXHHLU" allowfullscreen></iframe>
-            <h2>Rocking the free web</h2>
-            <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and o</p>
-            <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
-        </article>
-
-        <div class="further-info">
-            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="Mozilla.jpg" alt="Firefox"></a>
-            <a href="https://www.mozilla.org/"><img src="Dragon.jpg" alt="Mozilla Dragon"></a>
-            <a href="https://addons.mozilla.org/"><img src="JigSaw.jpg" alt="Firefox Puzzle"></a>
-            <a href="https://developer.mozilla.org/en-US/"><img src="mdn.svg" alt="MDN Web Docs"></a>
-        </div>
-
-        <div class="red-panda">
-            <img src="red-panda.jpg" alt="Red Panda">
-        </div>
-    </main>
+  <div class="logo">
+    My exciting website!
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">About us</a></li>
+      <li><a href="">Our history</a></li>
+      <li><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+  <main class="grid">
+    <article>
+      <h1>
+        An Exciting Blog Post
+      </h1>
+      <img src="picture_6.jpg" alt="placeholder" class="feature">
+      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+      <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+      <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.  Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+      <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+      <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+    </article>
+    <aside>
+      <h2>Photography</h2>
+      <ul class="photos">
+        <li><img src="picture_1.jpg" alt="Photo 1"></li>
+        <li><img src="picture_2.jpg" alt="Photo 2"></li>
+        <li><img src="picture_3.jpg" alt="Photo 3"></li>
+        <li><img src="picture_4.jpg" alt="Photo 4"></li>
+        <li><img src="picture_5.jpg" alt="Photo 5"></li>
+      </ul>
+    </aside>
+  </main>
 </body>
 </html>
