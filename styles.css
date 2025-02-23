@@ -1,0 +1,63 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #ff1493;
+  font-size: 2em;
+  font-family: "Times New Roman", serif;
+}
+
+.dotted-divider {
+  border: none;
+  border-bottom: 5px dotted purple;
+  margin: 10px 0;
+  width: 100%;
+}
+
+h2 {
+  color: #555;
+  font-weight: bold;
+  color: #888;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.contact-box {
+  border: 5px solid purple;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.contact-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.contact-box li {
+  margin-bottom: 5px;
+}
+
+.contact-box a {
+  text-decoration: none;
+}
+
+.contact-box a[href^="mailto"] {
+  color: green;
+}
+
+.contact-box a[href^="http"] {
+  color: orange;
+}
